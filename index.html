@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stanley & De Marco Aguadulce</title>
+
+    <!-- Link CSS-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Estilos Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Estilos Menu-->
+
+    <link rel="stylesheet" href="css/menu.css">
+
+    <!-- Fuente primaria-->
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Fuente prefunta-->
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <header class="hero">
+        <div class="textos-hero">
+            <h1>Stanley & De Marco</h1>
+            <h2 id="tata">Puerto Aguadulce</h2>
+            <p>Restaurante Italiano y Pizzeria</p>
+
+          <img src="img/logo.png" alt="logo" id="pez">
+        </div>
+        <div class="svg-hero" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+
+            <!-- EMPIEZA EL MENU-->
+                 
+
+                <div class="menu">
+                    <h2>Carta</h2>
+                    <script>
+                        "use strict";function resizeHeaderAndPlaceholderWhenHeaderMayBeStickySubNavOnly(){let n=isFullHeaderSticky(),t=isNavBarOnlySticky();removeStickyHeaderClass();resizeHeaderAndPlaceholder();n?setFullHeaderToSticky():t&&setNavBarOnlyToSticky()}function resizeHeaderAndPlaceholder(){setRestaurantInfoHeaderHeight();setPageTopPlaceholderSize()}function viewportBelowNarrowBreakPoint(){return window.innerWidth<=414}function mobileMenuIsShowing(){return mobileMenuIsOpen&&viewportBelowNarrowBreakPoint()}function setTabIndexes(n,t){viewportBelowNarrowBreakPoint()?(n.setAttribute("tabindex","1"),n.checked||setTabIndexForLinks(t,"-1")):(setTabIndexForLinks(t,"1"),n.setAttribute("tabindex","-1"))}function setTabIndexForLinks(n,t){for(let i=0;i<n.length;i++){let r=n[i];r.setAttribute("tabindex",t)}}function setHeaderState(){let n=window.pageYOffset,t=n-yOffsetOld;if(mobileMenuIsShowing()){setNavBarOnlyToSticky();return}n===0?removeStickyHeaderClass():isNavigatedTo?(setNavBarOnlyToSticky(),isNavigatedTo=!1):t>0?(scrollPixelCounter<0&&(scrollPixelCounter=0),scrollPixelCounter+=t,scrollPixelCounter>stickyHeaderScrollDownBuffer&&n>=restaurantInfoHeaderHeight&&setNavBarOnlyToSticky()):t<0&&(scrollPixelCounter>0&&(scrollPixelCounter=0),scrollPixelCounter+=t,-scrollPixelCounter>stickyHeaderScrollUpBuffer&&n>=restaurantInfoHeaderHeight?setFullHeaderToSticky():-scrollPixelCounter<=stickyHeaderScrollUpBuffer&&n<restaurantInfoHeaderHeight&&removeStickyHeaderClass());yOffsetOld=n}function setPageTopPlaceholderSize(){let n=document.getElementById("header__content").offsetHeight+"px";document.getElementById("header__placeholder-container").style.height=n}function setRestaurantInfoHeaderHeight(){restaurantInfoHeaderHeight=document.getElementById(fullHeaderId).offsetHeight-document.getElementById(subHeaderNavId).offsetHeight}function setNavBarOnlyToSticky(){addStickyHeaderClassToElement(subHeaderNavId);removeStickyHeaderClassFromElement(fullHeaderId)}function setFullHeaderToSticky(){addStickyHeaderClassToElement(fullHeaderId);removeStickyHeaderClassFromElement(subHeaderNavId)}function removeStickyHeaderClass(){removeStickyHeaderClassFromElement(fullHeaderId);removeStickyHeaderClassFromElement(subHeaderNavId)}function addStickyHeaderClassToElement(n){document.getElementById(n).classList.add(stickyHeaderCss)}function removeStickyHeaderClassFromElement(n){document.getElementById(n).classList.remove(stickyHeaderCss)}function isFullHeaderSticky(){return document.getElementById(fullHeaderId).classList.contains(stickyHeaderCss)}function isNavBarOnlySticky(){return document.getElementById(subHeaderNavId).classList.contains(stickyHeaderCss)}function setIsNavigatedToTrue(){isNavigatedTo=!0}function closeMenu(n){n.checked&&viewportBelowNarrowBreakPoint()&&n.click()}function openMobileMenu(){triggerOpenAlert();setNavBarOnlyToSticky();mobileMenuIsOpen=!0}function closeMobileMenu(){triggerCloseAlert();window.pageYOffset===0?removeStickyHeaderClass():window.pageYOffset<=restaurantInfoHeaderHeight&&setFullHeaderToSticky();mobileMenuIsOpen=!1}function triggerOpenAlert(){const n=document.getElementById("menu-open-alert");triggerAlert(n)}function triggerCloseAlert(){const n=document.getElementById("menu-close-alert");triggerAlert(n)}function triggerAlert(n){n.style.display="block";window.setTimeout(function(){n.style.display="none"},1e3)}function toggleProductList(n){const t=findAncestor(n.target,"menu__category"),i=16;t.classList.contains("open")?(t.classList.remove("open"),findDescendant(t,"menu__category-heading").setAttribute("aria-expanded",!1),closeProductList(findDescendant(t,"menu__product-list-container"),i)):(t.classList.add("open"),findDescendant(t,"menu__category-heading").setAttribute("aria-expanded",!0),openProductList(t,findDescendant(t,"menu__product-list-container"),i))}function findAncestor(n,t){while((n=n.parentElement)&&!n.classList.contains(t));return n}function findDescendant(n,t){return n.querySelector("."+t)}function openProductList(n,t,i){t.style.height="auto";const r=getComputedStyle(t).height;t.style.height=0;setTimeout(function(){t.style.height=r},i);setTimeout(function(){n.classList.contains("open")&&(t.style.height="auto")},400+i)}function closeProductList(n,t){n.style.height=getComputedStyle(n).height;setTimeout(function(){n.style.height=0},t)}let isNavigatedTo=!1,mobileMenuIsOpen=!1,menuHasFocus=!1,restaurantInfoHeaderHeight,yOffsetOld,headerResizeTimeout=null,placeholderAdjustTimeoutMilliseconds=100,scrollPixelCounter=0;const stickyHeaderCss="header__sticky-header",fullHeaderId="full-header",subHeaderNavId="sub-header-navigation",stickyHeaderScrollUpBuffer=150,stickyHeaderScrollDownBuffer=50;document.addEventListener("DOMContentLoaded",function(){const t=document.getElementsByClassName("js-nav-link"),n=document.getElementById("menu-checkbox");setRestaurantInfoHeaderHeight();yOffsetOld=window.pageYOffset;for(let i=0;i<t.length;i++){let r=t[i];r.addEventListener("click",function(){closeMenu(n);r.blur()});r.addEventListener("focus",function(){menuHasFocus=!0});r.addEventListener("blur",function(){menuHasFocus=!1;window.setTimeout(function(){menuHasFocus||closeMenu(n)},100)})}window.addEventListener("resize",function(){clearTimeout(headerResizeTimeout);headerResizeTimeout=setTimeout(resizeHeaderAndPlaceholderWhenHeaderMayBeStickySubNavOnly,placeholderAdjustTimeoutMilliseconds);mobileMenuIsShowing()?setNavBarOnlyToSticky():window.pageYOffset===0&&removeStickyHeaderClass()});n&&(setTabIndexes(n,t),window.addEventListener("resize",function(){setTabIndexes(n,t)}),n.addEventListener("change",function(){n.checked?(setTabIndexForLinks(t,"1"),openMobileMenu()):(setTabIndexForLinks(t,"-1"),closeMobileMenu())}));window.addEventListener("scroll",function(){setHeaderState()});window.addEventListener("load",function(){setPageTopPlaceholderSize();window.pageYOffset!==0&&setFullHeaderToSticky()})});
+                      /*! Picturefill - v2.3.1 - 2015-04-09
+                      * http://scottjehl.github.io/picturefill
+                      * Copyright (c) 2015 https://github.com/scottjehl/picturefill/blob/master/Authors.txt; Licensed MIT */
+                      window.matchMedia||(window.matchMedia=function(){var t=window.styleMedia||window.media;if(!t){var n=document.createElement("style"),i=document.getElementsByTagName("script")[0],r=null;n.type="text/css";n.id="matchmediajs-test";i.parentNode.insertBefore(n,i);r="getComputedStyle"in window&&window.getComputedStyle(n,null)||n.currentStyle;t={matchMedium:function(t){var i="@media "+t+"{ #matchmediajs-test { width: 1px; } }";return n.styleSheet?n.styleSheet.cssText=i:n.textContent=i,"1px"===r.width}}}return function(n){return{matches:t.matchMedium(n||"all"),media:n||"all"}}}()),function(n,t,i){function f(t){"object"==typeof module&&"object"==typeof module.exports?module.exports=t:"function"==typeof define&&define.amd&&define("picturefill",function(){return t});"object"==typeof n&&(n.picturefill=t)}function u(n){var s,t,i,u,f,h=n||{},e,c;for(s=h.elements||r.getAllElements(),e=0,c=s.length;c>e;e++)if(t=s[e],i=t.parentNode,u=void 0,f=void 0,"IMG"===t.nodeName.toUpperCase()&&(t[r.ns]||(t[r.ns]={}),h.reevaluate||!t[r.ns].evaluated)){if(i&&"PICTURE"===i.nodeName.toUpperCase()){if(r.removeVideoShim(i),u=r.getMatch(t,i),u===!1)continue}else u=void 0;(i&&"PICTURE"===i.nodeName.toUpperCase()||!r.sizesSupported&&t.srcset&&o.test(t.srcset))&&r.dodgeSrcset(t);u?(f=r.processSourceSet(u),r.applyBestCandidate(f,t)):(f=r.processSourceSet(t),(void 0===t.srcset||t[r.ns].srcset)&&r.applyBestCandidate(f,t));t[r.ns].evaluated=!0}}function e(){function i(){clearTimeout(f);f=setTimeout(o,60)}r.initTypeDetects();u();var f,e=setInterval(function(){return u(),/^loaded|^i|^c/.test(t.readyState)?void clearInterval(e):void 0},250),o=function(){u({reevaluate:!0})};n.addEventListener?n.addEventListener("resize",i,!1):n.attachEvent&&n.attachEvent("onresize",i)}if(n.HTMLPictureElement)return void f(function(){});t.createElement("picture");var r=n.picturefill||{},o=/\s+\+?\d+(e\d+)?w/;r.ns="picturefill",function(){r.srcsetSupported="srcset"in i;r.sizesSupported="sizes"in i;r.curSrcSupported="currentSrc"in i}();r.trim=function(n){return n.trim?n.trim():n.replace(/^\s+|\s+$/g,"")};r.makeUrl=function(){var n=t.createElement("a");return function(t){return n.href=t,n.href}}();r.restrictsMixedContent=function(){return"https:"===n.location.protocol};r.matchesMedia=function(t){return n.matchMedia&&n.matchMedia(t).matches};r.getDpr=function(){return n.devicePixelRatio||1};r.getWidthFromLength=function(n){var i;if(!n||n.indexOf("%")>-1!=!1||!(parseFloat(n)>0||n.indexOf("calc(")>-1))return!1;n=n.replace("vw","%");r.lengthEl||(r.lengthEl=t.createElement("div"),r.lengthEl.style.cssText="border:0;display:block;font-size:1em;left:0;margin:0;padding:0;position:absolute;visibility:hidden",r.lengthEl.className="helper-from-picturefill-js");r.lengthEl.style.width="0px";try{r.lengthEl.style.width=n}catch(u){}return t.body.appendChild(r.lengthEl),i=r.lengthEl.offsetWidth,0>=i&&(i=!1),t.body.removeChild(r.lengthEl),i};r.detectTypeSupport=function(t,i){var f=new n.Image;return f.onerror=function(){r.types[t]=!1;u()},f.onload=function(){r.types[t]=1===f.width;u()},f.src=i,"pending"};r.types=r.types||{};r.initTypeDetects=function(){r.types["image/jpeg"]=!0;r.types["image/gif"]=!0;r.types["image/png"]=!0;r.types["image/svg+xml"]=t.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1");r.types["image/webp"]=r.detectTypeSupport("image/webp","data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=")};r.verifyTypeSupport=function(n){var i=n.getAttribute("type"),t;return null===i||""===i?!0:(t=r.types[i],"string"==typeof t&&"pending"!==t?(r.types[i]=r.detectTypeSupport(i,t),"pending"):"function"==typeof t?(t(),"pending"):t)};r.parseSize=function(n){var t=/(\([^)]+\))?\s*(.+)/g.exec(n);return{media:t&&t[1],length:t&&t[2]}};r.findWidthFromSourceSize=function(i){for(var f,e=r.trim(i).split(/\s*,\s*/),u=0,c=e.length;c>u;u++){var l=e[u],o=r.parseSize(l),s=o.length,h=o.media;if(s&&(!h||r.matchesMedia(h))&&(f=r.getWidthFromLength(s)))break}return f||Math.max(n.innerWidth||0,t.documentElement.clientWidth)};r.parseSrcset=function(n){for(var t,r,i,e,u,f=[];""!==n;)n=n.replace(/^\s+/g,""),r=n.search(/\s/g),i=null,-1!==r?(t=n.slice(0,r),e=t.slice(-1),((","===e||""===t)&&(t=t.replace(/,+$/,""),i=""),n=n.slice(r+1),null===i)&&(u=n.indexOf(","),-1!==u?(i=n.slice(0,u),n=n.slice(u+1)):(i=n,n=""))):(t=n,n=""),(t||i)&&f.push({url:t,descriptor:i});return f};r.parseDescriptor=function(n,t){var o,c=t||"100vw",h=n&&n.replace(/(^\s+|\s+$)/g,""),l=r.findWidthFromSourceSize(c),s,u,i,f,e;if(h)for(s=h.split(" "),u=s.length-1;u>=0;u--)i=s[u],f=i&&i.slice(i.length-1),"h"!==f&&"w"!==f||r.sizesSupported?"x"===f&&(e=i&&parseFloat(i,10),o=e&&!isNaN(e)?e:1):o=parseFloat(parseInt(i,10)/l);return o||1};r.getCandidatesFromSourceSet=function(n,t){for(var u,f=r.parseSrcset(n),e=[],i=0,o=f.length;o>i;i++)u=f[i],e.push({url:u.url,resolution:r.parseDescriptor(u.descriptor,t)});return e};r.dodgeSrcset=function(n){n.srcset&&(n[r.ns].srcset=n.srcset,n.srcset="",n.setAttribute("data-pfsrcset",n[r.ns].srcset))};r.processSourceSet=function(n){var t=n.getAttribute("srcset"),u=n.getAttribute("sizes"),i=[];return"IMG"===n.nodeName.toUpperCase()&&n[r.ns]&&n[r.ns].srcset&&(t=n[r.ns].srcset),t&&(i=r.getCandidatesFromSourceSet(t,u)),i};r.backfaceVisibilityFix=function(n){var t=n.style||{},i="webkitBackfaceVisibility"in t,r=t.zoom;i&&(t.zoom=".999",i=n.offsetWidth,t.zoom=r)};r.setIntrinsicSize=function(){var i={},u=function(n,t,i){t&&n.setAttribute("width",parseInt(t/i,10))};return function(f,e){var o;f[r.ns]&&!n.pfStopIntrinsicSize&&(void 0===f[r.ns].dims&&(f[r.ns].dims=f.getAttribute("width")||f.getAttribute("height")),f[r.ns].dims||(e.url in i?u(f,i[e.url],e.resolution):(o=t.createElement("img"),o.onload=function(){if(i[e.url]=o.width,!i[e.url])try{t.body.appendChild(o);i[e.url]=o.width||o.offsetWidth;t.body.removeChild(o)}catch(n){}f.src===e.url&&u(f,i[e.url],e.resolution);f=null;o.onload=null;o=null},o.src=e.url)))}}();r.applyBestCandidate=function(n,t){var f,e,i,u;for(n.sort(r.ascendingSort),e=n.length,i=n[e-1],u=0;e>u;u++)if(f=n[u],f.resolution>=r.getDpr()){i=f;break}i&&(i.url=r.makeUrl(i.url),t.src!==i.url&&(r.restrictsMixedContent()&&"http:"===i.url.substr(0,5).toLowerCase()?void 0!==window.console&&console.warn("Blocked mixed content image "+i.url):(t.src=i.url,r.curSrcSupported||(t.currentSrc=t.src),r.backfaceVisibilityFix(t))),r.setIntrinsicSize(t,i))};r.ascendingSort=function(n,t){return n.resolution-t.resolution};r.removeVideoShim=function(n){var r=n.getElementsByTagName("video"),t,i;if(r.length){for(t=r[0],i=t.getElementsByTagName("source");i.length;)n.insertBefore(i[0],t);t.parentNode.removeChild(t)}};r.getAllElements=function(){for(var n,u=[],f=t.getElementsByTagName("img"),i=0,e=f.length;e>i;i++)n=f[i],("PICTURE"===n.parentNode.nodeName.toUpperCase()||null!==n.getAttribute("srcset")||n[r.ns]&&null!==n[r.ns].srcset)&&u.push(n);return u};r.getMatch=function(n,t){for(var i,e,o,u,s=t.childNodes,f=0,h=s.length;h>f;f++)if(i=s[f],1===i.nodeType){if(i===n)return u;if("SOURCE"===i.nodeName.toUpperCase()&&(null!==i.getAttribute("src")&&void 0!==typeof console&&console.warn("The `src` attribute is invalid on `picture` `source` element; instead, use `srcset`."),e=i.getAttribute("media"),i.getAttribute("srcset")&&(!e||r.matchesMedia(e)))){if(o=r.verifyTypeSupport(i),o===!0){u=i;break}if("pending"===o)return!1}}return u};e();u._=r;f(u)}(window,window.document,new window.Image);
+                        </script>
+                        <style>*{font-family:"Ubuntu",sans-serif}html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}html,body{margin:0;padding:0}picture{display:block}.container{max-width:1272px;width:100%;margin-right:auto;margin-left:auto;padding-left:1.125rem;padding-right:1.125rem}@media print,screen and (min-width:415px){.container{padding-left:2rem;padding-right:2rem}}@media print,screen and (min-width:769px){.container{padding-left:3.75rem;padding-right:3.75rem}}.offset-anchor-container{position:relative}.offset-anchor{position:absolute;top:-100px}.visually-hidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.visually-hidden.show-on-focus:focus{clip:auto;height:auto;margin:0;overflow:visible;position:absolute;width:auto}body{line-height:1.5;text-rendering:optimizelegibility;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased}h1{font-size:1.5rem;line-height:1;font-weight:500}@media print,screen and (min-width:415px){h1{font-size:2rem}}@media print,screen and (min-width:769px){h1{font-size:2.5rem}}h2{text-align:center;line-height:1;font-size:1.38rem;margin-top:20px;margin-bottom:10px;font-family:"Ubuntu",sans-serif;font-weight:500;color:#000}@media print,screen and (min-width:415px){h2{font-size:1.5rem;margin-top:30px;margin-bottom:15px}}@media print,screen and (min-width:769px){h2{font-size:2.25rem}}h3{font-size:1rem;font-weight:500;margin:0}@media print,screen and (min-width:415px){h3{font-size:1.125rem}}@media print,screen and (min-width:769px){h3{font-size:1.875rem}}.header{top:0;left:0;float:right;width:100%}.header__skip{z-index:9999;top:0;left:0;padding:3px;background-color:#f6f6f6}.header__sticky-header{position:fixed;z-index:10;top:0;width:100%;background-color:#fff;-webkit-box-shadow:0 8px 8px 0 rgba(8,8,8,.5);-moz-box-shadow:0 8px 8px 0 rgba(8,8,8,.5);box-shadow:0 8px 8px 0 rgba(8,8,8,.5)}.header__content{padding-top:10px}.header__restaurant-info-text{display:flex;flex-direction:column}.header__heading{margin:0}.header__top-section{min-height:53px;word-break:break-word;-ms-word-wrap:break-word}.header__logo{display:inline-block;float:left;margin-right:10px;width:53px}.header__address{margin:0;font-size:.875rem;font-weight:400}.header__bottom-section{margin:5px 0 0;overflow:hidden;background-color:#fff}.header__nav-toggle{position:relative;z-index:9999;display:inline-block;left:-15px;width:53px;height:53px;cursor:pointer}.header__nav-toggle-icon{position:absolute;top:50%;left:-25%;transition:background-color .25s ease-in;margin-left:50%;width:24px;height:3px;text-indent:-9999px;background-color:#266abd}.header__nav-toggle-icon:after,.header__nav-toggle-icon:before{content:"";position:absolute;left:0;transition:all .25s ease-in-out;width:100%;height:3px;background-color:#266abd}.header__nav-toggle-icon:before{top:-9px}.header__nav-toggle-icon:after{top:9px}.header__menu-checkbox:checked~.header__nav-toggle .header__nav-toggle-icon{background-color:transparent}.header__menu-checkbox:checked~.header__nav-toggle .header__nav-toggle-icon:before{top:0;transform:rotate(45deg)}.header__menu-checkbox:checked~.header__nav-toggle .header__nav-toggle-icon:after{top:0;transform:rotate(-45deg)}.header__menu-checkbox:focus~.header__nav-toggle{outline:1px #f00 solid}.header__nav{position:absolute;z-index:21;top:0;bottom:-50px;left:-100%;transition:transform .35s cubic-bezier(.05,1.04,.72,.98);margin:0;width:100%;height:850px;padding-top:70px;transform:none;background-color:#fff}.header__menu-checkbox:checked~.header__nav{transform:translate3d(100%,0,0)}.header__nav-list{width:100%;padding:0 16px}.header__nav-item{list-style:none}.header__nav-link{display:block;margin:0 0 0 20px;padding:5px 0;overflow-wrap:break-word;word-wrap:break-word;overflow:hidden;font-size:1.45rem;font-weight:500;color:#266abd;text-decoration:none}.header__call-to-action-wrapper{display:flex;justify-content:center;align-items:center}.header__call-to-action{font-size:1rem;display:inline-block;padding:8px 30px 10px 30px;background-color:#266abd;border-radius:4px;color:#fff;text-align:center;text-decoration:none}.header__call-to-action:hover{text-decoration:underline}.header__call-to-action:focus{box-shadow:0 0 7px #9ecaed}.header__call-to-action-wrapper{float:right}.header__call-to-action{margin:8px auto;z-index:20}@media print,screen and (min-width:415px){.header__call-to-action-wrapper{margin-bottom:-18px}.header__content{padding-top:25px}.header__top-section{min-height:65px}.header__logo{width:65px}.header__address{font-size:1rem}.header__bottom-section{margin:0 auto;padding-bottom:15px}.header__nav-toggle{z-index:0;display:none}.header__nav{position:relative;z-index:18;left:0;display:inline-block;transition:none;height:auto;width:auto;padding-top:12px;flex-wrap:wrap;flex-direction:row-reverse;justify-content:flex-start}.header__menu-checkbox:checked~.header__nav{transform:none}.header__open-mobile-menu{display:none}.header__nav-list{margin:3px 0 0 0;width:auto;padding:0;flex-wrap:wrap}.header__nav-item{display:inline-block}.header__nav-link{margin:0 25px 0 0;padding:0;line-height:1.2;font-size:1.375rem}.header__nav-link:hover,.header__nav-link:focus{text-decoration:underline}.header__nav-toggle-icon{width:0}}@media print,screen and (min-width:769px){.header__content{padding-top:34px}.header__logo{width:75px}.header__heading{padding-top:1px}.header__top-section{min-height:75px}.header__address{font-size:1.25rem;font-weight:400}.header__cuisine{display:inline}.header__nav-link{margin-right:40px}}.footer{display:flex;justify-content:center;padding:50px 0}.footer__logo{width:100px;display:inline-block}.footer__logo-image{width:100%}@media print,screen and (min-width:415px){.footer__logo{width:166px}}.hero-banner{height:200px;position:relative;display:block;width:100%;box-sizing:border-box;overflow:hidden;margin-top:0}@media print,screen and (min-width:415px){.hero-banner{height:250px}}@media print,screen and (min-width:769px){.hero-banner{height:400px}}.hero-banner__background-image{position:relative;left:-50%;width:auto}.hero-banner__background-image-container{position:absolute;height:100%;top:0;left:50%;z-index:-1}.about-us{display:block}.about-us__hidden-image{display:none}.about-us__text{color:#333;font-weight:400;font-size:.875rem;text-align:left}.about-us__text p{margin:0 auto}@media print,screen and (min-width:415px){.about-us__text{font-size:1rem;text-align:center}}@media print,screen and (min-width:769px){.about-us__text{font-size:1.25rem}}.about-us__image-wrapper{margin-top:40px;overflow:hidden;border-radius:8px}.about-us__image{min-width:285px;min-height:197px;height:100%;display:block}@media print,screen and (min-width:769px){.about-us__image{max-height:494px}}.contact-us__subheading{margin-bottom:16px;color:#f50028}.menulog .contact-us__subheading{color:#26bf22}.contact-us__content{font-size:0;padding-bottom:16px;border-radius:8px;background-color:#f5f5f5}.contact-us__section-wrapper{padding-top:16px}@media print,screen and (min-width:415px){.contact-us__content{padding:0 26px 16px}}@media print,screen and (min-width:769px){.single-restaurant .contact-us__section-wrapper{display:inline-block;width:47%;vertical-align:top}.single-restaurant .contact-us__section-wrapper:nth-child(odd){margin-right:3%}.single-restaurant .contact-us__section-wrapper:nth-child(even){margin-left:3%}.contact-us__subheading{font-size:1.125rem}.single-restaurant .contact-us__subheading{font-size:1.875rem}}.contact-us__call-to-action-wrapper{display:flex;justify-content:center;align-items:center}.contact-us__call-to-action{font-size:1rem;display:inline-block;padding:8px 30px 10px 30px;background-color:#266abd;border-radius:4px;color:#fff;text-align:center;text-decoration:none}.contact-us__call-to-action:hover{text-decoration:underline}.contact-us__call-to-action:focus{box-shadow:0 0 7px #9ecaed}.contact-us__call-to-action{margin:24px 0 8px}.contact-us__tile-container{display:flex;flex-wrap:wrap;justify-content:space-between}.contact-us__full-width-tile{width:100%}.contact-us__tile{width:100%}.contact-us__tile:nth-child(n+2){margin-top:40px}@media print,screen and (min-width:769px){.contact-us__tile{width:48%}.contact-us__tile:nth-child(2){margin-top:0}.contact-us__tile:nth-child(odd){margin-right:2%}.contact-us__tile:nth-child(even){margin-left:2%}.single-restaurant .contact-us__tile{width:100%;margin-right:0}}.contact-us__chain-section-wrapper{width:100%}.contact-us-map__text-wrapper{padding:0 26px}.contact-us-map__address{margin-bottom:22px;color:#333;font-size:.875rem;font-weight:500}.contact-us-map__map{height:268px;width:100%;border-width:0;padding:0}@media print,screen and (min-width:415px){.contact-us-map__text-wrapper{padding:0}.contact-us-map__address{font-size:1rem}}@media print,screen and (min-width:769px){.single-restaurant .contact-us-map__text-wrapper,.single-restaurant .contact-us-map__address{font-size:1.25rem}}.contact-us-opening-hours__container{padding:0 26px}.contact-us-opening-hours__content{font-size:.875rem}.contact-us-opening-hours__day-and-times{display:flex;justify-content:space-between;margin-bottom:8px}.contact-us-opening-hours__disclaimer{margin-top:24px}@media print,screen and (min-width:415px){.contact-us-opening-hours__container{padding:0}.contact-us-opening-hours__content{font-size:1rem}}@media print,screen and (min-width:769px){.single-restaurant .contact-us-opening-hours__content{max-width:440px;font-size:1.25rem}}.contact-us-delivery-areas__container{padding:0 26px}@media print,screen and (min-width:415px){.contact-us-delivery-areas__container{padding:0}}.single-restaurant .contact-us-delivery-areas__container{padding:0}.contact-us-delivery-areas__content{padding:0;font-size:.875rem}.single-restaurant .contact-us-delivery-areas__content{padding:16px 26px;border-radius:8px;background-color:#f5f5f5}@media print,screen and (min-width:415px){.contact-us-delivery-areas__content{font-size:1rem}}@media print,screen and (min-width:769px){.single-restaurant .contact-us-delivery-areas__content{font-size:1.25rem}}.reviews{display:block;text-align:center;color:#333;font-weight:400;font-size:.875rem}@media print,screen and (min-width:415px){.reviews{font-size:1rem}}@media print,screen and (min-width:769px){.reviews{font-size:1.25rem}}.reviews__reviews-listing{flex-flow:row wrap}@media print,screen and (min-width:415px){.reviews__reviews-listing{display:flex;align-content:space-between}}.reviews__review{position:relative;min-width:184px;width:100%;background-color:#f5f5f5;text-align:left;padding:20px 20px;border-radius:8px}.reviews__review:nth-child(n+2){margin-top:40px}@media print,screen and (min-width:769px){.reviews__review{width:48%;max-width:593px}.reviews__review:nth-child(2){margin-top:0}}@media print,screen and (min-width:769px){.reviews__review:nth-child(odd){margin-right:2%}}@media print,screen and (min-width:769px){.reviews__review:nth-child(even){margin-left:2%}}.reviews__title{padding-bottom:0}@media print,screen and (min-width:769px){.reviews__name{font-size:1.25rem}}.reviews__date{position:absolute;right:0;top:0;margin:20px}.reviews__rating{display:inline-block;text-align:left;height:24px;width:144px;background-size:24px 100%;background-repeat:repeat-x;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 17'%3E%3Cpath fill='%23CACACA' d='M9 1.85L6.93 6.04a.42.42 0 0 1-.32.22l-4.63.67 3.35 3.26c.1.1.15.23.12.37l-.79 4.6 4.15-2.18a.42.42 0 0 1 .38 0l4.15 2.17-.8-4.6a.42.42 0 0 1 .13-.36l3.35-3.25-4.63-.68a.42.42 0 0 1-.32-.22L9 1.85zM6.28 5.47L8.63.73a.42.42 0 0 1 .74 0l2.35 4.74 5.26.76c.34.05.47.47.23.71l-3.8 3.7.9 5.2c.05.34-.3.6-.61.44L9 13.82l-4.7 2.46a.42.42 0 0 1-.6-.44l.9-5.2-3.8-3.7a.42.42 0 0 1 .22-.7l5.26-.77z'/%3E%3C/svg%3E")}.reviews__number-of-ratings{margin-top:5px}.reviews__rating--fill{display:inline-block;text-align:left;height:100%;width:100%;vertical-align:top;background-size:24px 100%;background-repeat:repeat-x;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 17'%3E%3Cpath fill='%23FF5959' fill-rule='evenodd' d='M11.72 5.47l5.26.76c.34.05.47.47.23.71l-3.8 3.7.9 5.2c.05.34-.3.6-.61.44L9 13.82l-4.7 2.46a.42.42 0 0 1-.6-.44l.9-5.2-3.8-3.7a.42.42 0 0 1 .22-.7l5.26-.77L8.63.73a.42.42 0 0 1 .74 0l2.35 4.74z'/%3E%3C/svg%3E")}.menu{display:block;font-family:"Ubuntu",sans-serif}.menu__accordion{border:solid medium #e0e0e0;border-radius:4px}.menu__category-heading{position:relative;border:none;width:100%;padding:15px 100px 15px 15px;text-align:left;letter-spacing:normal;background-color:#fafafa;cursor:pointer}@media print,screen and (min-width:415px){.menu__category-heading{padding:15px 145px 15px 50px}}@media print,screen and (min-width:769px){.menu__category-heading{padding:15px 175px 15px 60px}}.menu__category-heading:before,.menu__category-heading:after{content:'';position:absolute;top:50%;transition:all .15s linear;width:11px;height:1px;background-color:#266abd}@media print,screen and (min-width:415px){.menu__category-heading:before,.menu__category-heading:after{width:14px;height:1.5px}}@media print,screen and (min-width:769px){.menu__category-heading:before,.menu__category-heading:after{width:20px;height:2px}}.menu__category-heading:before{transform:rotate(45deg);right:30.5px}@media print,screen and (min-width:415px){.menu__category-heading:before{right:62.5px}}@media print,screen and (min-width:769px){.menu__category-heading:before{right:84.5px}}.menu__category-heading:after{transform:rotate(-45deg);right:23px}@media print,screen and (min-width:415px){.menu__category-heading:after{right:53px}}@media print,screen and (min-width:769px){.menu__category-heading:after{right:71px}}.menu__category-name{color:#266abd;word-break:break-word;-ms-word-wrap:break-word}@media print,screen and (min-width:769px){.menu__category-name{font-size:1.5rem}}.menu__category-description{padding-top:5px;font-size:.875rem;font-weight:400;color:#707070;word-break:break-word;-ms-word-wrap:break-word}@media print,screen and (min-width:415px){.menu__category-description{font-size:1rem}}@media print,screen and (min-width:769px){.menu__category-description{font-size:1.25rem}}.menu__product-list-container{position:relative;overflow:hidden;transition:height .4s ease-in-out}.menu__product-list-container:before{content:'';position:absolute;width:100%;border-bottom:solid thin #e0e0e0}.menu__product-list{display:table;width:100%;padding:15px;letter-spacing:normal;background-color:#fff;font-size:.875rem;font-weight:400;color:#333;table-layout:fixed}@media print,screen and (min-width:415px){.menu__product-list{padding:15px 50px;font-size:1rem}}@media print,screen and (min-width:769px){.menu__product-list{padding:15px 60px;font-size:1.25rem}}.menu__category.open .menu__category-heading:before{transform:rotate(-45deg)}.menu__category.open .menu__category-heading:after{transform:rotate(45deg)}.menu__category:not(:last-child){border-bottom:solid thin #e0e0e0}.menu__product{display:table-row}.menu__product:last-child .menu__product-text{padding-bottom:0}.menu__product-text{display:table-cell;padding:0 20px 20px 0}.menu__product-name{word-break:break-word;-ms-word-wrap:break-word}.menu__product-description{color:#707070;word-break:break-word;-ms-word-wrap:break-word}@media print,screen and (min-width:415px){.menu__product-description{font-size:.875rem}}@media print,screen and (min-width:769px){.menu__product-description{font-size:1rem}}.menu__product-price{display:table-cell;text-align:right;font-weight:500;width:65px;white-space:nowrap}@media print,screen and (min-width:415px){.menu__product-price{width:75px}}@media print,screen and (min-width:769px){.menu__product-price{width:95px}}.errors__container{height:100%;text-align:center;background-color:#d23737}@media print,screen and (min-width:415px){.errors__container{max-height:276px}}@media print,screen and (min-width:769px){.errors__container{max-height:444px}}.errors__title{margin:0 40px;padding-top:90px;font-size:1.5rem;font-weight:500;color:#fff}@media print,screen and (min-width:415px){.errors__title{padding-top:100px;font-size:2rem}}@media print,screen and (min-width:769px){.errors__title{padding-top:150px;font-size:3.75rem}}.errors__text{margin:0 40px;padding-bottom:90px;font-size:1rem;color:#fff}@media print,screen and (min-width:415px){.errors__text{padding-bottom:100px;font-size:1.25rem}}@media print,screen and (min-width:769px){.errors__text{padding-bottom:150px;font-size:1.5rem}}</style>
+                      <script>
+                      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                      })(window,document,'script','dataLayer','GTM-KPLTWP');</script>
+                      <script src="https://drive.google.com/file/d/1a_Li1f7R5tSbHLqmz_Z_DPrRy23JwI1e/view?usp=sharing"></script>
+                      <script>
+                          var platformData = {
+                              platformData: {
+                                  applicationId: 7,
+                                  userAgent: "Responsive Web",
+                                  environment: "prod",
+                                  instancePosition: "i-071b",
+                                  language: "es",
+                                  currency: "EUR",
+                                  version: "4711",
+                                  country: "ES",
+                                  appType: "Web",
+                                  name: "content_microsite",
+                                  branding: "justeat"
+                              },
+                              pageData: {
+                                  name: "microsite",
+                                  group: "microsite",
+                                  template: "italiana"
+                              },
+                              restaurantData: {
+                                  id: 24663
+                              }
+                          }
+                      
+                          var dataLayer = window.dataLayer || [];
+                          dataLayer.push(platformData);
+                      </script>
+                      <link href="estilos.css" rel="stylesheet"></link>
+                      <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500&amp;display=swap" rel="stylesheet" type="text/css"></link>
+                      <script>
+                              document.createElement("picture");
+                          </script>
+                      <script type="application/ld+json">
+                              {
+                        "@context": "http://schema.org",
+                        "@type": "Restaurant",
+                        "name": "Stanley Di Marco Aguadulce",
+                        "image": "https://d2egcvq7li5bpq.cloudfront.net/es/images/restaurants/24663.gif",
+                        "address": "Puerto Deportivo Aguadulce, Local C10",
+                        "servesCuisine": "Italiana",
+                        "aggregateRating": {
+                          "@type": "AggregateRating",
+                          "bestRating": 6,
+                          "ratingCount": 34,
+                          "ratingValue": 4.6
+                        },
+                        "openingHoursSpecification": [
+                          {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "http://schema.org/Monday",
+                            "opens": "13:30:00",
+                            "closes": "23:59:00"
+                          },
+                          {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "http://schema.org/Wednesday",
+                            "opens": "13:30:00",
+                            "closes": "23:59:00"
+                          },
+                          {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "http://schema.org/Thursday",
+                            "opens": "13:30:00",
+                            "closes": "23:59:00"
+                          },
+                          {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "http://schema.org/Friday",
+                            "opens": "13:30:00",
+                            "closes": "23:59:00"
+                          },
+                          {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "http://schema.org/Saturday",
+                            "opens": "13:30:00",
+                            "closes": "23:59:00"
+                          },
+                          {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "http://schema.org/Sunday",
+                            "opens": "13:30:00",
+                            "closes": "23:59:00"
+                          }
+                        ],
+                        "geo": {
+                          "@type": "GeoCoordinates",
+                          "latitude": 36.814292,
+                          "longitude": -2.561852
+                        }
+                      };
+                          </script>
+                     
+                  
+                      <noscript>
+                          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPLTWP"
+                                  height="0" width="0" style="display:none;visibility:hidden"></iframe>
+                      </noscript>
+                      
+                    
+                      
+                      <script>
+                          let isUsingHeroHeaderFallbackImage = false;
+                      
+                          function useHeroHeaderFallbackImage() {
+                              if (!isUsingHeroHeaderFallbackImage) {
+                                  isUsingHeroHeaderFallbackImage = true;
+                      
+                                  const imageSourceElements = document.getElementsByClassName('js-image-source');
+                                  for (let i = 0; i < imageSourceElements.length; i++) {
+                                      const sourceElement = imageSourceElements[i];
+                                      const fallbackSrc = sourceElement.dataset.fallbackSrc;
+                                      sourceElement.srcset = fallbackSrc;
+                                  }
+                              }
+                      
+                              const fallbackImgElement = document.getElementById("hero-banner-background-image");
+                      
+                              if (fallbackImgElement) {
+                                  fallbackImgElement.src = fallbackImgElement.dataset.fallbackSrc;
+                              }
+                          }
+                      </script>
+                      
+                    
+                      
+                      <div class="menu__accordion">
+                      
+                      <div class="menu__category">
+                      <button aria-expanded="false" class="menu__category-heading" id="ach" onclick="toggleProductList(event)">
+                      <h3 class="menu__category-name">Antipasti</h3>
+                      </button>
+                      <div class="menu__product-list-container" style="height: 0;">
+                      <div class="menu__product-list" id="acp">
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Milhojas de berenjenas con queso de cabra y miel (5 ud)</div>
+                      </div>
+                      <div class="menu__product-price">10,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Tarta de atún rojo con aguacate y mango </div>
+                      </div>
+                      <div class="menu__product-price">13,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Provolonne clásico </div>
+                        <div class="menu__product-description">
+                      Tomate y pasas
+                      </div>
+                      </div>
+                      <div class="menu__product-price">9,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Carpaccio de solomillo con parmesano, rúcula y aceto</div>
+                      <div class="menu__product-description">
+                      
+                       </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Gambas al pil-pil</div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Croquetas de funghi porcini con jamón serrano</div>
+                        <div class="menu__product-description">
+                      con salsa de soja y curry
+                       </div>
+                      </div>
+                      <div class="menu__product-price">11,00€</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Tabla de quesos italianos</div>
+                        <div class="menu__product-description">
+                      Con mermelada casera de tomate
+                       </div>
+                      </div>
+                      <div class="menu__product-price">13,00 €</div>
+                      </div>
+                       <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Vitelo Tonato </div>
+                      <div class="menu__product-description">
+                      (Rodajas de ternera al horno con salsa de atún)
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,00 €</div>
+                      </div>
+                        
+                        <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Carpaccio de pulpo</div>
+                      <div class="menu__product-description">
+                      Rúcula y aceto
+                      </div>
+                      </div>
+                      <div class="menu__product-price">13,00 €</div>
+                      </div>
+                        
+                         <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Flores de alcachofa con jamón Ibérico (5ud.)</div>
+                      
+                      </div>
+                      <div class="menu__product-price">14,00 €</div>
+                      </div>
+                      
+                         <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Alcachofas con foie (5ud.)</div>
+                      <div class="menu__product-description">
+                      Nata, manzana caramelizada
+                      </div>
+                      </div>
+                      <div class="menu__product-price">14,00 €</div>
+                      </div>
+                        
+                      </div>
+                      </div>
+                      </div>
+                      <div class="menu__category">
+                      <button aria-expanded="false" id="ich" class="menu__category-heading" onclick="toggleProductList(event)">
+                      <h3 class="menu__category-name">Insalata</h3>
+                      </button>
+                      <div class="menu__product-list-container" style="height: 0;">
+                      <div class="menu__product-list" id="icp">
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ensalada Stanley de Marco</div>
+                        <div class="menu__product-description">
+                      Espinaca, manzana, almendras tostadas, vinagreta de miel y mostaza a la antigua.
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ensalada Aqua</div>
+                      <div class="menu__product-description">
+                      Lechuga variada, tomate Kumato, bacalao ahumado, aceitunas negras, ventresca de atún, pimientos asados y salsa romesco
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ensalada de salmón y fresas</div>
+                      <div class="menu__product-description">
+                      Salmón, fresas, tomate, aguacate, flor del pensamiento y vinagreta de frutos rojos.
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ensalada Monte </div>
+                      <div class="menu__product-description">
+                      Lechuga variada, tomate cherry, brocoli, champiñones, ajo, piñones, jamón de pato y parmesano.
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ensalada de Bacon y Queso de Cabra</div>
+                      <div class="menu__product-description">
+                      Lechega variada, tomate cherry, bacon, queso de cabra, vinagreta de frutos rojos y pistachos
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ensalada Toscana</div>
+                      <div class="menu__product-description">
+                      Lechuga variada, pollo a la plancha, tomate cherry, cebolla frita, queso cheddar, picatostes, maíz tostado y miel
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ensalada Tropical </div>
+                      <div class="menu__product-description">
+                      Lechuga variada, langostinos, aguacates, piña, mango y salsa rosa
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                       </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ensalada Caprese </div>
+                      <div class="menu__product-description">
+                      Rúcula, mozzarella fresca, tomate, aceitunas negras y orégano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      
+                      </div>
+                      </div>
+                      </div>
+                      <div class="menu__category">
+                      <button aria-expanded="false" id="pch" class="menu__category-heading" onclick="toggleProductList(event)">
+                      <h3 class="menu__category-name">Pizzas</h3>
+                      </button>
+                      <div class="menu__product-list-container" style="height: 0;">
+                      <div class="menu__product-list" id="pcp">
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Pan de pizza</div>
+                      </div>
+                      <div class="menu__product-price">4,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Margarita</div>
+                        <div class="menu__product-description">
+                      Tomate, mozzarella y orégano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">8,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Prosciutto </div>
+                          <div class="menu__product-description">
+                      Tomate, mozzarella, jamón york y orégano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">10,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                       <div class="menu__product-name">Funghi </div>
+                          <div class="menu__product-description">
+                      Tomate, mozzarella, jamón york, champiñones y orégano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">4 Estaciones </div>
+                          <div class="menu__product-description">
+                      Tomate, mozzarella, jamón york, atún, champiñones, alcachofas
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Caprichosa </div>
+                          <div class="menu__product-description">
+                      Tomate, mozzarella, jamón york, atún, champiñones, alcachofa y orégano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                      </div>
+                         <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Stanley & De Marco </div>
+                          <div class="menu__product-description">
+                      Tomate, mozzarella, cebolla, champiñones, pimiento rojo, alcaparras, carne, huevo, orégano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,50 €</div>
+                      </div>
+                         <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">4 Quesos </div>
+                          <div class="menu__product-description">
+                      Tomate, mozzarella,roquefort, parmesano, emmental, cheddar y orégano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                      </div>
+                         <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Siciliana </div>
+                          <div class="menu__product-description">
+                      Tomate, mozzarella, aceitunas, anchoas, pimiento rojo asado y orégano.
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                      </div>
+                           <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Vegetal </div>
+                          <div class="menu__product-description">
+                      Tomate, mozzarella, surtido de verduras y orégano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                      </div>
+                           <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Nordica </div>
+                          <div class="menu__product-description">
+                      Tomate, mozzarella, salmón, bacalao, langostinos, huevas de lampo y perejil.
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,50 €</div>
+                      </div>
+                           <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Diávola </div>
+                          <div class="menu__product-description">
+                      Tomate, mozzarella, salami, huevo y orégano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                           <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Calzone Tono </div>
+                          <div class="menu__product-description">
+                      Tomate, mozzarella, atún, cebolla y orégano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,00 €</div>
+                      </div>
+                          
+                      </div>
+                      </div>
+                      </div>
+                      <div class="menu__category">
+                      <button aria-expanded="false" id="pech" class="menu__category-heading" onclick="toggleProductList(event)">
+                      <h3 class="menu__category-name">Pizzas Especiales</h3>
+                      </button>
+                      <div class="menu__product-list-container" style="height: 0;">
+                      <div class="menu__product-list" id="pecp">
+                         
+                           <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Pizza Hawaiana </div>
+                          <div class="menu__product-description">
+                      Tomate, mozzarella, jamón york, piña, maíz y orégano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,00 €</div>
+                      </div>
+                           <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Pizza Barbacoa </div>
+                          <div class="menu__product-description">
+                      Salsa barbacoa, bacon, pollo, maíz, cebolla, carne picada, mozzarella y orégano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">14,00 €</div>
+                      </div>
+                      
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Pizza de Pera con Gorgonzola y Nueces </div>
+                      <div class="menu__product-description">
+                      Mozzarella, gorgonzola, pera, cebolla caramelizada, rúcula, nueces
+                      </div>
+                      </div>
+                      <div class="menu__product-price">13,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Pizza con Foie Fresco </div>
+                      <div class="menu__product-description">
+                      Tomate, mozzarella fresca, foie plancha, jamón de pato, manzana, miel, aceto balsámico, rúcula
+                      </div>
+                      </div>
+                      <div class="menu__product-price">14,50 €</div>
+                      </div>
+                       <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Pizza Especial Nueces </div>
+                      <div class="menu__product-description">
+                      Crema de nueces, mozzarella fresca, jamón york, rúcula, tomate cherry, aceto balsámico
+                      </div>
+                      </div>
+                      <div class="menu__product-price">13,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Pizza Especial Vegetal </div>
+                      <div class="menu__product-description">
+                      Mozzarella, crema de alcachofas, berenjena, calabacín, pimiento asado, cebolla tierna, tomate cherry
+                      </div>
+                      </div>
+                      <div class="menu__product-price">13,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                       <div class="menu__product-text">
+                      <div class="menu__product-name">Pizza Zucca </div>
+                      <div class="menu__product-description">
+                      Tomate, crema de calabaza, queso de cabra, bacon, cebolla, almendra laminada
+                      </div>
+                      </div>
+                      <div class="menu__product-price">13,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Pizza Tartufo </div>
+                      <div class="menu__product-description">
+                      Tomate, salsa carbonara, setas variadas, trufa laminada, aceite de trufa negra, parmesano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">14,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Pizza Costa Blanca </div>
+                      <div class="menu__product-description">
+                      Tomate, salsa carbonara, bacon, cebolla, champiñones
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                        <div class="menu__product-text">
+                        <div class="menu__product-name">Pizza Calzone Frankfurt</div>
+                        <div class="menu__product-description">
+                        Tomate, mozzarella, salchicha, champiñones y orégano
+                        </div>
+                        </div>
+                        <div class="menu__product-price">12,00 €</div>
+                        </div>
+
+
+                      </div>
+                      </div>
+                      </div>
+                      <div class="menu__category">
+                      <button aria-expanded="false" id="rtch" class="menu__category-heading" onclick="toggleProductList(event)">
+                      <h3 class="menu__category-name">Recetas Tradicionales</h3>
+                      </button>
+                      <div class="menu__product-list-container" style="height: 0;">
+                      <div class="menu__product-list" id="rtcp">
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Spaghetti Carbonara </div>
+                        <div class="menu__product-description">
+                      Bacon y nata
+                      </div>
+                      </div>
+                      <div class="menu__product-price">9,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Spaghetti Boloñesa </div>
+                      </div>
+                      <div class="menu__product-price">9,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Spaghetti al Pesto </div>
+                        <div class="menu__product-description">
+                      Salsa albahaca y piñones
+                      </div>
+                      </div>
+                      <div class="menu__product-price">9,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Rigatoni all'Amatriciana </div>
+                      <div class="menu__product-description">
+                      Bacon, tomate natural, cebolla, guindilla
+                      </div>
+                      </div>
+                      <div class="menu__product-price">9,75 €</div>
+                      </div>
+                      
+                      </div>
+                      </div>
+                      </div>
+                        <div class="menu__category">
+                      <button aria-expanded="false" id="nech" class="menu__category-heading" onclick="toggleProductList(event)">
+                      <h3 class="menu__category-name">Nuestras Especialidades</h3>
+                      </button>
+                      <div class="menu__product-list-container" style="height: 0;">
+                      <div class="menu__product-list" id="necp">
+                        
+                        <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Spaghetti con carrillera </div>
+                      <div class="menu__product-description">
+                      Carrillera confitada, tomate natural, cebolla y setas
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                      </div>
+                        
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Spaghetti al "Pil-Pil" </div>
+                      <div class="menu__product-description">
+                      Ajo, aceite, langostinos, guindilla, perejil
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Rigatoni con Verduras Asadas al Horno </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Pasta alla Gricia </div>
+                      <div class="menu__product-description">
+                      Puerro confitado, langostino, guanciale y parmesano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Spaghetti Bellini </div>
+                      <div class="menu__product-description">
+                      Berenjena, tomate natural, cebolla, jamón serrano, parmesano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Tagliatelle Stanley & de Marco </div>
+                      <div class="menu__product-description">
+                      Champiñones, cebolla, nata, roquefort, parmesano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Tagliatelle Rasputín </div>
+                      <div class="menu__product-description">
+                      Salmón marinado, nata, roquefort, caviar, perejil
+                      </div>
+                        </div>
+                        <div class="menu__product-price">12,00 €</div>
+                        </div>
+                        <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Spaghetti Porto Bello </div>
+                      <div class="menu__product-description">
+                      Champiñones, cebolla, carne picada, nata, tomate y perejil
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Spahetti al Frutti di Mare </div>
+                      <div class="menu__product-description">
+                      Gambas, mejillones, calamares, almejas, tomate natural
+                      </div>
+                      </div>
+                      <div class="menu__product-price">13,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                        <div class="menu__product-text">
+                        <div class="menu__product-name">Spaghetti alle Vongole</div>
+                        <div class="menu__product-description">
+                        Tomate natural, almejas frescas y vino blanco
+                        </div>
+                        </div>
+                        <div class="menu__product-price">11,50 €</div>
+                        </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Spaghetti con Almejas y Trigueros </div>
+                      <div class="menu__product-description">
+                      Almejas, espárragos trigueros, calabacín y tomate cherry
+                      </div>
+                      </div>
+                      <div class="menu__product-price">13,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Rigatoni Siracusa </div>
+                      <div class="menu__product-description">
+                      Bacalao marinado, cebolla, tomate natural, perejil
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Gnocchi Rellenos de Gorgonzola Con crema de setas y mostaza a la antigua </div>
+                      <div class="menu__product-description">
+                      Nata, pistachos y setas
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                      </div>
+
+                      <div class="menu__product">
+                        <div class="menu__product-text">
+                        <div class="menu__product-name">Gnocchi  de patata </div>
+                        <div class="menu__product-description">
+                        4 quesos o parseDescriptor
+                        </div>
+                        </div>
+                        <div class="menu__product-price">10,50 €</div>
+                        </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Rigatoni 4 Quesos </div>
+                      </div>
+                      <div class="menu__product-price">10,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Papardelle al Martini Blanco </div>
+                      <div class="menu__product-description">
+                      Con langostinos, espinacas, nata, tomate y martini
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Papardelle al Tartufo </div>
+                      <div class="menu__product-description">
+                      Trufa negra, nueces, piñones, mantequilla, aceite de trufa, parmesano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">13,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Papardelle Funghi Porcini </div>
+                      <div class="menu__product-description">
+                      Setas variadas, boletus, nata, nueces
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Risotto de Boletus y Setas Variadas </div>
+                        <div class="menu__product-description">
+                      Langostinos, queso cheddar
+                      </div>
+                      </div>
+                      <div class="menu__product-price">13,50 €</div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                        <div class="menu__category">
+                      <button aria-expanded="false" id="pcrch" class="menu__category-heading" onclick="toggleProductList(event)">
+                      <h3 class="menu__category-name">Pasta Casera Rellena</h3>
+                      </button>
+                      <div class="menu__product-list-container" style="height: 0;">
+                      <div class="menu__product-list" id="pcrcp">
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Gigante Funghi Porcini </div>
+                      <div class="menu__product-description">
+                      Pasta rellena de setas, crema de trufa negra, nueces y nata
+                      </div>
+                      </div>
+                       <div class="menu__product-price">12,00€</div>
+                      </div>
+                        <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Cappelletti rellenos de Vieras</div>
+                      <div class="menu__product-description">
+                      Crema de marisco, langostinos, nata y salsa de ostras
+                      </div>
+                      </div>
+                       <div class="menu__product-price">13,00 €</div>
+                      </div>
+                        
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ravioli Gorgonzola </div>
+                      <div class="menu__product-description">
+                      Pasta rellena de gorgonzola, nata, champiñones, jamón de york y tomate
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ravioli Relleno de Langostinos </div>
+                      <div class="menu__product-description">
+                      Langostinos, ajo, aceite, guindilla, perejil
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ravioli de Rabo de Toro </div>
+                        <div class="menu__product-description">
+                      Tomate cherry, calabacín, guanciale, cebolla, ajo y setas
+                      </div>
+                      </div>
+                      <div class="menu__product-price">13,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ravioli Relleno de Bacalao y Gambas </div>
+                          <div class="menu__product-description">
+                      Tomate natural, tomate frito, langostinos y ali-oli de miel
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Tortelloni de Ricotta y Espinacas a la Carbonara </div>
+                          <div class="menu__product-description">
+                      Bacon y nata
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Saccoti de Pera y Parmesano a la Hawaiana </div>
+                      <div class="menu__product-description">
+                      Pasas, piñones, piña, nata, coco, kiwi, fresa
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ravioli de Foie de Pato </div>
+                          <div class="menu__product-description">
+                      Con crema de castaña al brandy, nata, piñones y aceto balsámico
+                      </div>
+                      </div>
+                      <div class="menu__product-price">13,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ravioli 4 Quesos </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ravioli de Carne con Salsa Boloñesa </div> 
+                        <div class="menu__product-description">
+                      
+                      </div>
+                      </div>
+                      <div class="menu__product-price">9,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ravioli Nero de Calabaza </div>
+                      <div class="menu__product-description">
+                      Calabaza, crema de gorgonzola, salvia, mascarpone, pipas de calabaza, scamorza affumicata y brotes
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Ravioli de Jamón Ibérico con Espárragos Trigueros a la Boscana </div>
+                          <div class="menu__product-description">
+                      Jamón, champiñones, cebolla, nata, mantequilla y queso parmesano
+                      </div>
+                      </div>
+                      <div class="menu__product-price">13,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Pasta Rellena de Dátiles y Bacon </div>
+                      <div class="menu__product-description">
+                      Con salsa carbonara
+                      </div>
+                      </div>
+                      <div class="menu__product-price">13,50 €</div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      <div class="menu__category">
+                      <button aria-expanded="false" id="pahch" class="menu__category-heading" onclick="toggleProductList(event)">
+                      <h3 class="menu__category-name">Pasta al Horno</h3>
+                      </button>
+                      <div class="menu__product-list-container" style="height: 0;">
+                      <div class="menu__product-list" id="pahcp">
+                        <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Canelloni della Nonna </div>
+                      <div class="menu__product-description">
+                      Setas, vieras, langostinos, bechamel de marisco y queso
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                        
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Canelloni "Stanley" </div>
+                      <div class="menu__product-description">
+                      Setas, vieiras, langostinos y bechamel de marisco
+                      </div>
+                      </div>
+                      <div class="menu__product-price">12,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Berenjena a la Parmesana </div>
+                        <div class="menu__product-description">
+                      Tomate, cebolla, queso gratinado y pesto
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Lasaña Boloñesa </div>
+                      </div>
+                      <div class="menu__product-price">12,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Berenjena Rellena </div>
+                      <div class="menu__product-description">
+                      Sofrito de verdura con carne picada y gratinado
+                      </div>
+                      </div>
+                      <div class="menu__product-price">11,50 €</div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      
+                      <div class="menu__category">
+                      <button aria-expanded="false" id="cch" class="menu__category-heading" onclick="toggleProductList(event)">
+                      <h3 class="menu__category-name">Carnes</h3>
+                      </button>
+                      <div class="menu__product-list-container" style="height: 0;">
+                      <div class="menu__product-list" id="ccp">
+                        
+                        <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Solomillo de Ternera </div>
+                      <div class="menu__product-description">
+                      Roquefort o pimienta verde (+1.50)
+                      </div>
+                      </div>
+                      <div class="menu__product-price">19,50 €</div>
+                      </div>
+                       
+                        <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Solomillo de Ternera con Foie a la Marsala </div>
+                      <div class="menu__product-description">
+                      Setas, boletus, nata, Foie y vino dulce
+                      </div>
+                      </div>
+                      <div class="menu__product-price">23,00 €</div>
+                      </div>
+                        
+                        <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Entrecot de Ternera (500gr) </div>
+                      <div class="menu__product-description">
+                      Roquefort o pimienta verde (+ 1.50)
+                      </div>
+                      </div>
+                      <div class="menu__product-price">20,00 €</div>
+                      </div>
+                        
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Solomillo Ibérico con Boletus </div>
+                        <div class="menu__product-description">
+                      Setas y nata
+                      </div>
+                      </div>
+                      <div class="menu__product-price">17,00 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Pollo del Chef </div>
+                        <div class="menu__product-description">
+                      pechuga de pollo a la plancha con champiñones, cebolla, nata y postaza a la antigua
+                      </div>
+                      </div>
+                      <div class="menu__product-price">15,00 €</div>
+                      </div>
+                       
+                      </div>
+                      </div>
+                        </div>
+                       
+                      
+                        
+                        
+                       <!--  POSTRES CASEROS-->
+                        <div class="menu__category">
+                      <button aria-expanded="false" id="pech" class="menu__category-heading" onclick="toggleProductList(event)">
+                      <h3 class="menu__category-name">Postres caseros</h3>
+                      </button>
+                      <div class="menu__product-list-container" style="height: 0;">
+                      <div class="menu__product-list" id="pecp">
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Tiramisú</div>
+                      </div>
+                      <div class="menu__product-price">4,50 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Tarta de queso con arándanos </div>
+                      </div>
+                      <div class="menu__product-price">4,80 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Tarta de chocolate con crema inglesa </div>
+                      </div>
+                      <div class="menu__product-price">4,80 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Panna Cotta </div>
+                      <div class="menu__product-description">
+                      
+                       </div>
+                      </div>
+                      <div class="menu__product-price">4.25 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Mousse de chocolate</div>
+                      </div>
+                      <div class="menu__product-price">4,25 €</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Milhojas con crema y chocolate caliente</div>
+                      </div>
+                      <div class="menu__product-price">4,50€</div>
+                      </div>
+                      <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Crêpe Stanley &amp; De marco</div>
+                      </div>
+                      <div class="menu__product-price">4,80 €</div>
+                      </div>
+                       <div class="menu__product">
+                      <div class="menu__product-text">
+                      <div class="menu__product-name">Helado artesano </div>
+                      <div class="menu__product-description">
+                      (consultar sabores según temporada)
+                      </div>
+                      </div>
+                      <div class="menu__product-price">4,50 €</div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+
+
+
+                                  <!-- EMPIEZA LA CARTA DE VINOS-->
+                                  
+
+<h2 id="vinos">Carta de Vinos</h2>
+<div class="menu__accordion" id="cvinos">
+
+  <div class="menu__category">
+  <button aria-expanded="false" id="ach" class="menu__category-heading" onclick="toggleProductList(event)">
+  <h3 class="menu__category-name"> D.O Rioja</h3>
+  </button>
+  <div class="menu__product-list-container" style="height: 0;">
+  <div class="menu__product-list" id="acp">
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Marqués de Cáceres Crianza</div>
+  
+  </div>
+  <div class="menu__product-price">13,00 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Marqués de Cáceres Crianza 3/8 </div>
+  </div>
+  <div class="menu__product-price">10,00 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Artadi Viñas De Gain</div>
+  </div>
+  <div class="menu__product-price">22,00 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Marques de Vargas</div>
+  
+  </div>
+  <div class="menu__product-price">22,00 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Azpilicueta</div>
+  </div>
+  <div class="menu__product-price">14,00 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Marques de la concordia</div>
+  </div>
+  <div class="menu__product-price">14,00€</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Viña Izadi</div>
+  </div>
+  <div class="menu__product-price">14,00 €</div>
+  </div>
+   
+    
+  </div>
+  </div>
+  </div>
+  <div class="menu__category">
+  <button aria-expanded="false" id="ich" class="menu__category-heading" onclick="toggleProductList(event)">
+  <h3 class="menu__category-name">D.O Ribera del Duero</h3>
+  </button>
+  <div class="menu__product-list-container" style="height: 0;">
+  <div class="menu__product-list" id="icp">
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">La planta</div>
+  </div>
+  <div class="menu__product-price">14,00 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Sembro</div>
+  </div>
+  <div class="menu__product-price">13,00 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Protos Roble</div>
+  </div>
+  <div class="menu__product-price">13,00 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Protos Crianza </div>
+  </div>
+  <div class="menu__product-price">19,00 €</div>
+  </div>
+ 
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Matarromera</div>
+  </div>
+  <div class="menu__product-price">24,00 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Arzuaga Crianza</div>
+  </div>
+  <div class="menu__product-price">21,00 €</div>
+   </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Pago de Carraovejas</div>
+  </div>
+  <div class="menu__product-price">28,00 €</div>
+  </div>
+    <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Carmelo Rodero</div>
+  </div>
+  <div class="menu__product-price">22,00 €</div>
+  </div>
+    <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Pago de los capellanes</div>
+  </div>
+  <div class="menu__product-price">25,00 €</div>
+  </div>
+    
+  
+  </div>
+  </div>
+  </div>
+  <div class="menu__category">
+  <button aria-expanded="false" id="pch" class="menu__category-heading" onclick="toggleProductList(event)">
+  <h3 class="menu__category-name">Otras D.O De España</h3>
+  </button>
+  <div class="menu__product-list-container" style="height: 0;">
+  <div class="menu__product-list" id="pcp">
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Habla del silencio</div>
+  <div class="menu__product-description">
+    Extremadura
+    </div>
+  </div>
+  <div class="menu__product-price">15,00 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Rincón postrero</div>
+  <div class="menu__product-description">
+    Laujar-Alpujarra
+    </div>
+  </div>
+  <div class="menu__product-price">13,00 €</div>
+  </div>
+  
+  <div class="menu__product">
+  <div class="menu__product-text">
+   <div class="menu__product-name">Coto de Hayas</div>
+   <div class="menu__product-description">
+    Campo de Borja
+    </div>
+  </div>
+  <div class="menu__product-price">13,00 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">La cabra y la bota</div>
+  <div class="menu__product-description">
+    Ribera del Andarax
+    </div>
+  </div>
+  <div class="menu__product-price">23,00 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">El Terrao</div>
+  <div class="menu__product-description">
+    Ribera del Andarax
+    </div>
+  </div>
+  <div class="menu__product-price">11,00€</div>
+  </div>
+     <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Juan Gill 12 meses</div>
+  </div>
+  <div class="menu__product-price">15,00 €</div>
+  </div>
+     <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Mauro</div>
+  <div class="menu__product-description">
+    Castilla y León
+    </div>
+  </div>
+  <div class="menu__product-price">27,00 €</div>
+  </div>
+     <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Abadía Retuerta</div>
+  <div class="menu__product-description">
+   Castilla y león
+    </div>
+  </div>
+  <div class="menu__product-price">24,00 €</div>
+  </div>
+     
+      
+  </div>
+  </div>
+  </div>
+  
+    <div class="menu__category">
+  <button aria-expanded="false" id="pech" class="menu__category-heading" onclick="toggleProductList(event)">
+  <h3 class="menu__category-name">Otras D.O De Italia</h3>
+  </button>
+  <div class="menu__product-list-container" style="height: 0;">
+  <div class="menu__product-list" id="pecp">
+    
+    <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Moscato D´Asti Toso </div>
+  </div>
+  <div class="menu__product-price">14,00 €</div>
+  </div>
+    
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Lambrusco dell Emilia </div>
+  </div>
+  <div class="menu__product-price">9,50 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Fragolino</div>
+  </div>
+  <div class="menu__product-price">12,00 €</div>
+  </div>
+  <div class="menu__product">
+  <div class="menu__product-text">
+  <div class="menu__product-name">Brachetto Toso</div>
+  </div>
+  <div class="menu__product-price">14,00 €</div>
+  </div>
+  <div class="menu__product">
+    <div class="menu__product-text">
+    <div class="menu__product-name">Fantini</div>
+    </div>
+    <div class="menu__product-price">14,00 €</div>
+    </div>
+
+    <div class="menu__product">
+      <div class="menu__product-text">
+      <div class="menu__product-name">Sangue di Giuda</div>
+      </div>
+      <div class="menu__product-price">14,00 €</div>
+      </div>
+
+      <div class="menu__product">
+        <div class="menu__product-text">
+        <div class="menu__product-name">Leonardo Chianti</div>
+        </div>
+        <div class="menu__product-price">14,00 €</div>
+        </div>
+  
+  </div>
+  </div>
+  </div>
+</div>
+<p id="pregunta">En caso de intolerancia o alergía alimentaria comuníquelo a nuestro personal</p>
+</div>
+</div>
+</div>
+
+  
+  
+              <!-- ACABA LA CARTA DE VINOS-->
+        
+        
+            <!-- ACABA EL MENU-->
+
+
+
+            <footer>
+              <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.1549056132703!2d-2.564814084854966!3d36.81480777994549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7071b41305773f%3A0x1812a05039a5e664!2sRestaurante%20Stanley%20%26%20De%20Marco%20Aguadulce!5e0!3m2!1ses!2ses!4v1590429236650!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <p>Stanley & De Marco - Puerto Aguadulce by &copy FMRedondo</p>
+            </footer>
+    
+
+    
+</body>
+</html>

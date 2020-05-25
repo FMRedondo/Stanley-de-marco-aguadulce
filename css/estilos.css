@@ -1,0 +1,290 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    overflow-x: hidden;
+
+}
+
+
+/*HEADER*/
+
+.menu {
+    margin-top: -23px !important;
+}
+.menu__product-name{
+    font-size: 21px !important;
+}
+.menu__product-description{
+    font-size: 12px !important;
+}
+
+.hero{
+    background: url(../img/banner.png);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    z-index: 1;
+    height: 539px !important;
+}
+.textos-hero h1{
+    overflow: hidden;
+    font-family: 'Satisfy', cursive;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+#tata{
+    color:white;
+    overflow: hidden;
+    font-family: 'Satisfy', cursive;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -5px;
+    
+}
+
+#pez{
+    width: 120px;
+}
+.hero p{
+    font-size: 12px;
+}
+
+.titulo{
+    background-color: white;
+    z-index: 2;
+}
+
+.hero{
+    background-image:  url("../img/banner.png");
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.textos-hero{
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textos-hero h2{
+    font-size: 60px;
+    overflow-y: hidden;
+    color: #FD966D;
+}
+
+.textos-hero p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.textos-hero a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #a18cd1;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.svg-hero{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu{
+    width: 90%;
+    margin: 0px auto;
+}
+
+.menu h2{
+    overflow: hidden;
+}
+
+footer{
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p{
+    text-align: center;
+}
+
+#mapa{
+    margin: 20px auto;
+    width: 100%;
+}
+
+#vinos{
+    margin-top: 50px;
+}
+
+#cvinos{
+    margin-top: 10px;
+    
+}
+
+/* COLORES DEL MENU*/
+
+.menu__category-heading:before, .menu__category-heading:after{
+    background-color: white !important;
+}
+.menu__product-description{
+    color:black
+}
+
+#ach{
+    background-color:#b03f3b !important;
+    background: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+#ach .menu__category-name{
+    color: white !important;
+}
+
+#ich{
+    background-color:#c1b179 !important;
+}
+
+#ich .menu__category-name{
+    color: white !important;
+}
+
+#pch{
+    background-color:#007894 !important;
+}
+
+#pch .menu__category-name{
+    color: white !important;
+}
+
+#pech{
+    background-color:#d88f4e !important;
+}
+
+#pech .menu__category-name{
+    color: white !important;
+}
+
+#rtch{
+    background-color:#c3593f !important;
+}
+
+#rtch .menu__category-name{
+    color: white !important;
+}
+
+#nech{
+    background-color:#d5c241 !important;
+}
+
+#nech .menu__category-name{
+    color: white !important;
+}
+
+#pcrch{
+    background-color:#305889 !important;
+}
+
+#pcrch .menu__category-name{
+    color: white !important;
+}
+
+#pahch{
+    background-color:#c98da4 !important;
+}
+
+#pahch .menu__category-name{
+    color: white !important;
+}
+
+#cch{
+    background-color:#007894 !important;
+}
+
+#cch .menu__category-name{
+    color: white !important;
+}
+
+#pesch{
+    background-color:#c1b179 !important;
+}
+
+#pesch .menu__category-name{
+    color: white !important;
+}
+
+#acp{
+    background-color:#d79f9d !important;
+}
+
+
+#icp{
+    background-color: #E0D8BC !important;
+}
+
+#pcp{
+    background-color: #7FBBC9 !important;
+}
+
+#pecp{
+    background-color: #EBC7A6 !important;
+}
+
+#rtcp{
+    background-color: #E1AC9F !important;
+}
+
+#necp{
+    background-color: #EAE0A0 !important;
+}
+
+#pcrcp{
+    background-color: #97ABC4 !important;
+}
+
+#pahcp{
+    background-color: #E4C6D1 !important;
+}
+
+#ccp{
+    background-color: #7FBBC9 !important;
+}
+
+#pescp{
+    background-color: #E0D8BC !important;
+}
+
+.menu__product-description{
+    color:black !important;
+}
+
+
+#pregunta{
+
+    margin:15px;
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+    font-size: 20px;
+    
+    
+}
